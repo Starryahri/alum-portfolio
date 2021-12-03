@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    background-color: #DBDBDB;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.25rem
+}
+
+h3 {
+    text-decoration: underline;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+a {
+    color: #DBDBDB;
+    transition: text-decoration 1s ease-in;
+}
+a img {
+    width: 35%;
+    height: auto;
+}
+
+a:any-link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DBDBDB;
+}
+
+a:visited {
+    color: #DBDBDB;
+}
+
+nav a {
+    font-size: 1.5rem;
+    padding: 1% 1%;
+}
+
+.social-icon-filter{
+    filter: invert(11%) sepia(18%) saturate(6383%) hue-rotate(248deg) brightness(114%) contrast(107%);
+}
+
+#itchio {
+    width: 400%;
+    height: auto;
+}
+
+#work-button {
+    background-color: #34145C;
+    border: none;
+    color: #DBDBDB;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 100%;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#work-button:hover {
+    background-color: #BB9DE0;
+    text-decoration: underline;
+}
+
+.info a{
+    background-color: #34145C;
+    color: #DBDBDB;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Righteous', cursive;
+    margin: auto;
+    border-radius: 16px;
+    padding: 1%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.info a:hover {
+    background-color: #BB9DE0;
+}
+
+#index-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 3fr 0.25fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-gap: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Nav Bar */
+#nav-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+}
+
+nav {
+    background-color: #5C5C5C;
+}
+
+/* Main Content */
+#content-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#content-container-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: .25fr 1fr .1fr;
+    grid-gap: 10px;
+}
+
+#resume-container {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: auto;
+}
+
+#portrait-1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    filter: drop-shadow(1px 1px 10px black);
+}
+
+#portrait-1 img {
+    width: 120%;
+    height: auto;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/*social media */
+
+#socials-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: auto;
+}
+
+#socials-container p {
+    font-size: 1.25rem;
+}
+
+#social-icons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#works-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+/* Footer */
+#footer-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: auto;
+}
+
+
+
+/* Portfolio Page*/
+#portfolio-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#portfolio-container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 10px;
+    border-bottom: 1px solid black;
+}
+
+section {
+    border-bottom: 1px solid grey;
+}
+.project {
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    display: grid;
+    grid-template-rows: 0.25fr 1fr;
+    grid-gap: 10px;
+    padding: 10%;
+    
+}
+
+.project-title {
+    font-family: "Righteous";
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.project-img-vid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+.project-img-vid img{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    filter: drop-shadow(1px 1px 10px black);
+}
+
+
+.info-container {
+    display: grid;
+    grid-template-rows: 0.25fr 1fr 1fr 0.25fr;
+}
+
+.info {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#portrait-2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    filter: drop-shadow(1px 1px 10px black);
+}
+
+#portrait-2 img {
+    width: 120%;
+    height: auto;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#social-icons-container a {
+    color: #5C5C5C
+}
+
+
