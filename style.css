@@ -141,7 +141,7 @@ nav a {
 }
 
 nav {
-    background-color: #5C5C5C;
+    background-color: #BB9DE0;
 }
 
 /* Main Content */
@@ -156,6 +156,12 @@ nav {
     grid-template-rows: .25fr 1fr .1fr;
     grid-gap: 10px;
 }
+
+.navBar a:hover {
+    color: #34145C;
+    font-weight: 800;
+}
+
 
 #resume-container {
     grid-column-start: 2;
