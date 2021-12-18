@@ -266,6 +266,13 @@ section {
     filter: drop-shadow(1px 1px 10px black);
 }
 
+.project-img-vid iframe{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    filter: drop-shadow(1px 1px 10px black);
+}
+
 
 .info-container {
     display: grid;
@@ -295,5 +302,3 @@ section {
 #social-icons-container a {
     color: #5C5C5C
 }
-
-
